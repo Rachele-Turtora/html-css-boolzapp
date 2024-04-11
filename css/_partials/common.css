@@ -1,0 +1,12 @@
+body{
+    height: 100vh;
+    background-image: var(--bg-color);
+    display: flex;
+}
+
+.container{
+    width: 80%;
+    height: 90%;
+    margin: auto;
+    background-color: red;
+}
