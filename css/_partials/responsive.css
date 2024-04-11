@@ -6,7 +6,7 @@
         width: 100px;
     }
 
-    .notifiche,
+    .notifications,
     .search{
         display: none;
     }
@@ -29,9 +29,13 @@
     }
 
     .icons i{
-        font-size: 30px;
+        font-size: 25px;
         color: var(--gray);
-        padding: 0 15px;
+        padding: 0 10px;
+    }
+
+    .me .icons{
+        display: none;
     }
 
     .text i{
@@ -55,30 +59,72 @@
     }
 
     .container{
-        width: 80%;
+        max-width: 1400px;
         height: 90%;
         margin: auto;
     }
 
     .col-left{
-        width: 400px;
+        width: 600px;
     }
 
-    .notifiche{
+    .col-left .img{
+        margin: 20px 10px;
+    }
+
+    .me{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .me .icons{
+        display: flex;
+    }
+
+    .notifications{
         display: flex;
         width: 100%;
         height: 100px;
-        background-color: rgb(254, 63, 63);
+        background-color: #8fdafc;
+        display: flex;
+        align-items: center;
+    }
+
+    .fa-bell-slash{
+        font-size: 25px;
+        padding: 15px;
+        background-color: white;
+        color: #8fdafc;
+        border-radius: 50%;
+        margin: 0 20px;
+    }
+
+    .new-notification .get{
+        font-size: 17px;
+    }
+
+    .new-notification .enable{
+        font-size: 16px;
+        color: var(--darkgray);
+        text-decoration: underline;
     }
 
     .search{
         display: flex;
         width: 100%;
-        height: 80px;
-        background-color: rgb(255, 48, 48);
+        height: 60px;
+        background-color: rgb(243, 243, 243);
+    }
+
+    .search input{
+        width: 90%;
+        height: 80%;
+        margin: auto;
+        border: none;
     }
 
     .friends{
         height: calc(100% - 280px);
+        overflow: scroll;
     }
 }
