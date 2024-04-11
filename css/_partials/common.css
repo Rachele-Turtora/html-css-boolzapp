@@ -1,12 +1,40 @@
+/* MOBILE FIRST */
+
 body{
     height: 100vh;
-    background-image: var(--bg-color);
     display: flex;
 }
 
 .container{
-    width: 80%;
-    height: 90%;
-    margin: auto;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.col-left{
+    display: none;
     background-color: red;
+}
+
+.col-right{
+    width: 100%;
+    height: 100%;
+    background-color: blue;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.info{
+    width: 100%;
+    height: 100px;
+    background-color: rgb(107, 107, 255);
+}
+
+.text{
+    width: 100%;
+    height: 100px;
+    background-color: blueviolet;
+    display: flex;
+    align-self: flex-end;
 }
