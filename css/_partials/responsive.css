@@ -3,7 +3,7 @@
     .col-left{
         display: flex;
         flex-wrap: wrap;
-        width: 150px;
+        width: 100px;
     }
 
     .notifiche,
@@ -14,12 +14,36 @@
     .me{
         height: 100px;
         width: 100%;
-        background-color: rgb(255, 110, 110);
+        background-color: #eaeaea;
+        border-right: 1px solid var(--gray);
     }
 
     .friends{
         width: 100%;
         height: calc(100% - 100px);
+    }
+
+    .icons{
+        display: flex;
+        align-items: center;
+    }
+
+    .icons i{
+        font-size: 30px;
+        color: var(--gray);
+        padding: 0 15px;
+    }
+
+    .text i{
+        display: flex;
+        align-items: center;
+        font-size: 30px;
+        padding: 0 20px;
+        color: #6b7376;
+    }
+
+    .img{
+        margin: 20px auto;
     }
 }
 

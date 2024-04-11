@@ -14,7 +14,6 @@ body{
 
 .col-left{
     display: none;
-    background-color: red;
 }
 
 .col-right{
@@ -29,12 +28,18 @@ body{
     height: 100px;
     background-color: #eaeaea;
     display: flex;
+    justify-content: space-between;
+}
+
+.info-left{
+    display: flex;
     align-items: center;
+    padding-left: 20px;
 }
 
 .img{
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     overflow: hidden;
     margin: 10px;
 }
@@ -52,7 +57,11 @@ img{
 
 .access{
     font-size: 15px;
-    color: rgb(69, 69, 69);
+    color: var(--gray);
+}
+
+.icons{
+    display: none;
 }
 
 .messages{
@@ -88,6 +97,7 @@ img{
     padding: 20px;
     width: 70%;
     margin-top: 10px;
+    position: relative;
 }
 
 .box{
@@ -103,4 +113,25 @@ img{
 .white{
     background-color: white;
     margin-left: 30px;
+}
+
+.fa-angle-down,
+.time{
+    color: var(--gray);
+    position: absolute;
+}
+
+.fa-angle-down{
+    top: 25px;
+    right: 10px;
+}
+
+.time{
+    bottom: 6px;
+    right: 10px;
+    font-size: 12px;
+}
+
+.text i{
+    display: none;
 }
