@@ -12,7 +12,3 @@ ul{
 p{
     line-height: 1.5;
 }
-
-.invert{
-    filter: invert(1);
-}
